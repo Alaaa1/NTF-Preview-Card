@@ -22,6 +22,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       .attribution {
@@ -36,29 +42,45 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="card">
-        <img class="card-img-top" src="images/image-equilibrium.jpg" />
+    <div
+      class="
+        d-flex
+        container
+        flex-column
+        min-vh-100
+        justify-content-center
+        align-items-center
+      "
+    >
+      <div class="card shadow-lg">
+        <img
+          id="card-top-image"
+          class="card-img-top"
+          src="images/image-equilibrium.jpg"
+        />
         <div class="card-body">
           <h5 class="card-title">Equilibrium #3429</h5>
           <div class="card-text">
-            <p>Our Equilibrium collection promotes balance and calm.</p>
-            <span id="amount">0.041 ETH</span>
-            <span id="time">3 days left</span>
+            <span id="description"
+              >Our Equilibrium collection promotes balance and calm.</span
+            ><br /><br />
+            <img src="images/icon-ethereum.svg" />
+            <p id="amount">0.041 ETH</p>
+            <img id="clock" src="images/icon-clock.svg" />
+            <p id="time">3 days left</p>
           </div>
           <div class="card-footer">
-            <img src="./images/image-avatar.png" />
-            <p id="creator">Creation of Jules Wyvern</p>
+            <img
+              id="avatar"
+              class="rounded-circle"
+              src="./images/image-avatar.png"
+            />
+            <small id="creator">
+              <span id="creation">Creation of </span>Jules Wyvern</small
+            >
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Alaa</a>.
     </div>
 
     <!-- Add BootStrap JS Support-->
